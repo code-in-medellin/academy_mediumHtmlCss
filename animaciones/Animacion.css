@@ -1,0 +1,67 @@
+#boton{
+    display:block;
+    padding:20px; 
+    background-color: orange;
+    color:black;
+    width:150px;
+    height:50px;
+    text-align: center;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 3px solid black;
+    transition:border 500ms, background 10s, border-radius 5s, color 5s, text-align 2s;
+}
+
+#boton:hover{
+    border-radius:50px;
+    background-color:blue;
+    color:white;
+    border:10px dashed red;
+    text-align:left;
+}
+
+#caja{
+    width:300px;
+    height:300px;
+    background-color: yellow;
+    color:black;
+    border:5px solid black;
+    margin-top:50px;
+    font-size:20px;
+    line-height: 500px;
+    text-align:center;
+    animation-name: recorrido;
+    animation-duration:20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes recorrido{
+    0%{
+        margin-left:0px;
+        transform: rotate3d(0deg);
+    }
+    25%{
+        border:100px dashed black;
+        background-color: black;
+        color:red;
+    }
+    50%{
+        margin-left:1200px;
+        transform: rotate3d(360deg);
+        border-radius:1000px;
+    }
+    75%{
+        background-color: red;
+    }
+    85%{
+        background-color: blue;
+    }
+    100%
+    {
+        margin-left:0px;
+        transform: rotate3d(0deg);
+    }
+
+}
